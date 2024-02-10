@@ -14,4 +14,24 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.hero-text {
+  background-image:linear-gradient(14deg, #45C4F9 0%, navy 50%, #d30cbf 100%);
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  max-width: 11ch;
+  line-height: 5rem;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+.hero-button {
+  background-image:linear-gradient(14deg, #45C4F9 0%, #7D09FF 50%, #FF0BE5 100%);
+  font-weight: 600;
+  font-size: 23px;
+  padding: 16px 72px;
+  border-radius: 10px;
+  /* margin-top: 1rem; */
+}
+
 
