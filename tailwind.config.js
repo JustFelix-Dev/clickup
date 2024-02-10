@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors : {
-        'darked':"#292D34"
+        'darked':"#292D34",
+        "custom-base": "#24223E"
       }
     },
   },
