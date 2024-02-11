@@ -188,5 +188,14 @@ body {
   width: 100%;
 }
 
+.fireworks {
+  background-image: url('./assets/fireWorks.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+ 
+}
+
 
 
