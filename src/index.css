@@ -123,6 +123,7 @@ body {
   width: 40%;
 }
 
+
 .tab-container header {
   background-image:linear-gradient(14deg, #45C4F9 0%, navy 50%, #d30cbf 100%);
   font-size: 60px;
@@ -142,7 +143,7 @@ body {
   justify-content: center;
   height: 120px;
   width: 187px;
-  border-radius: 9px;
+  border-radius: 12px;
   border: 1px solid #ECECFC;
   transition: all ease-out 150ms;
 }
@@ -165,8 +166,9 @@ body {
 
 .tab-content {
   min-height: 400px;
-
+  box-shadow: -7px -7px 40px  rgba(69, 163, 249, 0.10), 0 0 1px rgba(137, 32, 254, 0.15), -7px -7px 40px rgba(255, 11, 229, 0.10), 0 0 1px rgba(255, 200, 0, 0.10);
 }
+
 .tab-content .text{
   flex: 0 0 60%;
 

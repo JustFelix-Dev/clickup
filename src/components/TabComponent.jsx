@@ -5,12 +5,14 @@ import productIcon from "../assets/Product.svg"
 import engineeringIcon from "../assets/Engineering.svg"
 import agenciesIcon from "../assets/Agencies.svg"
 import TabContent from "./TabContent";
+import { contentArray } from "../../utils/tabContent";
+
 
 const TabComponent = () => {
     const [activeTab, setActiveTab] = useState('PMO');
 
   return (
-    <div className="tab-container">
+    <div className="tab-container flex flex-col gap-6">
     <div className="tabs flex w-[80%] gap-4 mx-auto">
       <button className={ activeTab === 'PMO' ? 'tab active':'tab'} onClick={() => setActiveTab('PMO')}>
        <img src={pmoIcon} alt="pmo-icon" loading='lazy' /> <span>PMO</span>
@@ -33,11 +35,11 @@ const TabComponent = () => {
       </button>
     </div>
       <div className="tab-content">
-      {activeTab === 'PMO' && <TabContent/>}
-      {activeTab === 'Marketing' && <TabContent/> }
-      {activeTab === 'Product' && <TabContent/> }
-      {activeTab === 'Engineering' && <TabContent/> }
-      {activeTab === 'Agencies' && <TabContent/> }
+      {activeTab === 'PMO' && <TabContent content={contentArray[0]} />}
+      {activeTab === 'Marketing' && <TabContent content={contentArray[1]}/> }
+      {activeTab === 'Product' && <TabContent content={contentArray[2]}/> }
+      {activeTab === 'Engineering' && <TabContent content={contentArray[3]}/> }
+      {activeTab === 'Agencies' && <TabContent content={contentArray[4]}/> }
       </div>
     </div>
   )
