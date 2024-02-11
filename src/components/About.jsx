@@ -8,13 +8,14 @@ import netflixLogo from "../assets/Netflix.svg"
 import shopifyLogo from "../assets/shopify.svg"
 import tibcLogo from "../assets/Tibc.svg"
 import tMobileLogo from "../assets/T-mobile.svg"
+import ParallaxComponent from "./ParallaxComponent"
 
 
 
 const About = () => {
   return (
     <>
-    <div className="flex flex-col justify-center items-center border text-center">
+    <div className="flex flex-col justify-center items-center  text-center">
       <div className="border w-full about-header">Save time and get more done</div>
       <span className="text-[#24223E] flex  max-w-[32ch] text-[20px] font-medium text-center">Supercharge productivity. Streamline work by doing it, and seeing it, in one place.</span>
       <div className="flex self-stretch relative text-left pl-12">
@@ -39,9 +40,9 @@ const About = () => {
       </div>
 
     </div>
-    <div className=" border border-red-900 companies-bg  pt-12 mt-[200px]">
+    <div className=" companies-bg  pt-12 mt-[200px] ">
         <div className="font-extrabold text-center my-4 text-[#24223E]">Over 2+ million teams rely on ClickUp to collaborate and get work done. <button className="font-extrabold text-[#24223E] py-[8px] px-[10px] bg-[#F1F1F9] rounded-xl">Join them</button></div>
-        <div className="logos flex items-center justify-center mb-32 mt-8 gap-8">
+        <div className="logos flex items-center justify-center mb-52 mt-8 gap-8">
        <div>
         <img src={fortinetLogo} alt="" />
        </div>
@@ -69,10 +70,8 @@ const About = () => {
         </div>
 
     </div>
-    <div className="hello">
-        Hello WPRLD
-    </div>
-    
+
+    <ParallaxComponent/>
     </>
   )
 }
