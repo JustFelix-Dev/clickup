@@ -1,4 +1,5 @@
 import About from "./components/About"
+import AllTeams from "./components/AllTeams"
 import FireWorks from "./components/FireWorks"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
@@ -13,6 +14,7 @@ function App() {
     <About/>
     <Tab/>
     <FireWorks/>
+    <AllTeams/>
     </>
   )
 }
