@@ -10,7 +10,7 @@ const Hero = () => {
             One app to replace them all
         </div>
         <span className="text-[#24223E] text-[23px] font-bold">Get everyone working in a single platform</span>
-        <span className="text-[#24223E] font-medium text-[23px]">designed to manage any type of work.</span> <br />
+        <span className="text-[#24223E] font-medium text-[23px]">designed to manage any type of work.</span>
         <button className="hero-button shadow-lg">Get Started. It&apos;s FREE &rarr;</button>
         <div className="flex gap-1 items-center p-1">
             <img src={fiveStars} alt="five-stars" />
