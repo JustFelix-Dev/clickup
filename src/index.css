@@ -250,5 +250,13 @@ body {
   transform: translateY(2px);
 }
 
+.award-container {
+  background-image: url('./assets//award-bg.png');
+  height: 500px;
+}
+
+.awards img {
+    height: 180px;
+}
 
 
