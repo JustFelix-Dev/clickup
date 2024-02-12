@@ -271,5 +271,22 @@ body {
   padding-block: 1.5rem;
 }
 
+footer .header{
+  box-shadow: 0px 16px 78px rgba(41, 45, 52, 0.10);
+  border-radius: 9px;
+   overflow: hidden
+}
 
+.footer-content {
+  background: linear-gradient(33deg, #45C4F9 0%, #8920FE 33%, #FF0BE5 72%, #FFC800 100%);
+}
+
+.footer-button {
+  font-size: 14px;
+  box-shadow: 0px 10px 25px rgba(123, 104, 238, 0.50);
+  transition: all ease-in 150ms;
+}
+.footer-button:hover {
+  transform: translateY(3px);
+}
 
