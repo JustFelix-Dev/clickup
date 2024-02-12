@@ -290,3 +290,35 @@ footer .header{
   transform: translateY(3px);
 }
 
+main ul {
+ display: flex;
+ flex-direction: column;
+ gap: 1.1rem;
+
+}
+
+main ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+main ul header {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+
+main ul a {
+   font-size: 15px;
+   font-weight: 400;
+   color: #fff;
+}
+
+.social-links a:hover {
+  transition: all ease 150ms;
+  transform: translateY(3px);
+}
+

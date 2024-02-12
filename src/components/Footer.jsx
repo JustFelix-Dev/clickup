@@ -3,7 +3,13 @@ import ClickUp from "../assets/Clickup.svg";
 import freeTrainingIcon from "../assets/free-training.svg";
 import privacyIcon from "../assets/privacy.svg";
 import uptimeIcon from "../assets/up-time.svg";
-
+import appleStore from "../assets/apple-store.png";
+import  googlePlay from "../assets/google-store.png";
+import footerClickUpLogo from "../assets/footer-clickup.svg";
+import linkedInIcon from "../assets/linked-in.svg";
+import facebookIcon from "../assets/facebook.svg";
+import instagramIcon from "../assets/instagram.svg";
+import twitterIcon from "../assets/twitter.svg";
 
 const Footer = () => {
   return (
@@ -16,22 +22,22 @@ const Footer = () => {
             </div>
             <button className="footer-button border bg-[#7B6AEE] font-extrabold text-white py-[16px] px-[32px] rounded-lg">Free Forever</button>
         </div>
-        <div className="footer-content flex flex-col items-center justify-center h-[700px] w-full ">
-            <div className="flex w-full justify-center gap-14">
+        <div className="footer-content flex flex-col items-center justify-center w-full pt-40">
+            <div className="flex w-full justify-center gap-14 pb-10">
                 <div className="flex gap-4 items-center">
                     <img src={freeTrainingIcon} alt="training-icon" />
-                    <p className="text-white"><a className="text-white font-[700]" href="#">Free training</a> & 24-hours support</p>
+                    <p className="text-white"><a className="text-white hover:underline font-[700]" href="#">Free training</a> & 24-hours support</p>
                 </div>
                 <div className="flex gap-4 items-center">
                     <img src={privacyIcon} alt="privacy-icon" />
-                    <p className="text-white">Serious about <a className="text-white font-[700]" href="#">security & privacy</a></p>
+                    <p className="text-white">Serious about <a className="text-white font-[700] hover:underline" href="#">security & privacy</a></p>
                 </div>
                 <div className="flex gap-4 items-center">
                     <img src={uptimeIcon} alt="uptime-icon" />
-                    <p className="text-white"><a className="text-white font-[700]" href="#">Highest levels of uptime</a> the last 12 months</p>
+                    <p className="text-white"><a className="text-white font-[700] hover:underline" href="#">Highest levels of uptime</a> the last 12 months</p>
                 </div>
             </div>
-            <main className=" w-full border-b border-t border-white">
+            <main className=" w-[85%] flex justify-between border-b border-t border-gray-100 border-opacity-40 py-10 px-6">
                 <ul>
                     <header>CLICKUP</header>
                     <Link to="#">Download</Link>
@@ -84,10 +90,48 @@ const Footer = () => {
                 <Link to="#">vs Notion</Link>
                 <Link to="#">vs Basecamp</Link>
                 <Link to="#">vs Wrike</Link>
+                <Link to="#">vs MS Project</Link>
                 <Link to="#">vs Todoist</Link>
-                <Link to="#">Smartsheet</Link>
+                <Link to="#">vs Smartsheet</Link>
+                </ul>
+                <ul>
+                    <header>LEARN</header>
+                    <div className="flex flex-col justify-between h-full">
+                 <li className="flex flex-col">
+                    <Link to='#'>Blog</Link>
+                    <Link to='#'>Software Team Hub</Link>
+                    <Link to='#'>Agency Hub</Link>
+                    <Link to='#'>Newsletter</Link>
+                    <Link to='#'>Podcast</Link>
+                 </li>
+                 <div className="stores flex flex-col gap-2">
+                    <a href="https://apps.apple.com/us/app/clickup-manage-teams-tasks/id1535098836">
+                        <img src={appleStore} alt="apple-store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=co.mangotechnologies.clickup">
+                        <img src={googlePlay} alt="google-play" />
+                    </a>
+                 </div>
+                    </div>
                 </ul>
             </main>
+            <div className="flex justify-between mt-6 mb-10 items-center  w-[90%]">
+                <div>
+                    <img src={footerClickUpLogo} alt="footer-logo" />
+                    <div className=" flex gap-4">
+                        <a className=" text-white border-r border-white pr-2 py-1 text-[12px]">&copy; 2024 ClickUp</a>
+                        <a className=" text-white border-r border-white pr-2 py-1 text-[12px]" href="#">Security</a>
+                        <a className=" text-white border-r border-white pr-2 py-1 text-[12px]" href="#">Your Privacy</a>
+                        <a className="text-white text-[12px] pr-2 py-1 " href="#">Terms</a>
+                    </div>
+                </div>
+                <div className="flex gap-4 social-links">
+                 <a href="#"><img src={linkedInIcon} alt="linkedin-icon"/></a>
+                 <a href="#"><img src={facebookIcon} alt="facebook-icon"/></a>
+                 <a href="#"><img src={instagramIcon} alt="instagram-icon"/></a>
+                 <a href="#"><img src={twitterIcon} alt="twitter-icon"/></a>
+                </div>
+            </div>
         </div>
     </footer>
   )
