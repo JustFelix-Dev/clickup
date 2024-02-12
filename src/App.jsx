@@ -5,6 +5,7 @@ import FireWorks from "./components/FireWorks"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Tab from "./components/Tab"
+import TeamLookOut from "./components/TeamLookOut"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <FireWorks/>
     <AllTeams/>
     <Award/>
+    <TeamLookOut/>
     </>
   )
 }
