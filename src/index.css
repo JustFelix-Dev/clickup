@@ -210,12 +210,20 @@ body {
 
 }
 .all-teams .rep-team .details {
-  background: linear-gradient(199deg, rgba(38, 171, 250, 1) 0%, rgba(118, 18, 250, 1) 52%);
+  background: linear-gradient(199deg, rgba(38, 171, 250, 0.8) 0%, rgba(118, 18, 250, 0.9) 52%);
   width: 100%;
-  height: 230px;
+  height: 240px;
   border-top: 4px solid white;
   transform: skewY(5deg);
   transform-origin: top left;
+  backdrop-filter:  blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.details p {
+  background-color: red;
+  transform: skewY(-5deg);
+
 }
 
 

@@ -9,7 +9,7 @@ const AllTeams = () => {
         <header>All teams love ClickUp</header>
         <p className="text-[20px] text-center text-darked font-[700]">Teams love how ClickUp helps them get things done efficiently.</p>
         <p className="text-[20px] text-center text-darked ">But don’t take our word for it, hear it directly from them.</p>
-         <div className="rep-team flex  justify-center ">
+         <div className="rep-team flex ">
             <ImageCard image={finistraRepImage} />
             <ImageCard image={cnRepImage} />
             <ImageCard image={pressedRepImage} />
