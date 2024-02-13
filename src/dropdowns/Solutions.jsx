@@ -16,10 +16,10 @@ import seeAllIcon from "../assets/seeAll.svg";
 const Solutions = () => {
   return (
     <div className="solutions">
-      <div className="flex border-t border-b border-gray-300">
-      <div className="w-[55%] border-r flex flex-col gap-10 pt-8 pl-4 pr-2 pb-4 border-gray-300">
+      <div className="flex border-t border-b  border-gray-300">
+      <div className="w-[55%] border-r flex flex-col gap-10 pb-12 pt-8 pl-4 pr-2 pb-4 border-gray-300">
             <div className="text-[15px] font-extrabold text-darked">TEAM</div>
-            <div className="flex flex-col gap-12">
+            <div className="flex flex-col gap-16 pl-4 pr-2">
             <div className="flex justify-between">
                 <div className="flex gap-2">
                     <img src={softwareIcon} className="pt-1 self-start" alt="software-icon" />
@@ -72,8 +72,58 @@ const Solutions = () => {
                 <img src={seeAllIcon} alt="fetures-icon" />
             </button>
         </div>
-        <div></div>
-        <div></div>
+        <div className="border-r border-gray-300 pt-8 pl-4 pr-4 pb-4">
+        <div className="text-[15px] font-extrabold text-darked">USE CASE</div>
+            <div className="flex  flex-col gap-10 pt-10">
+                <div className="flex gap-2">
+                    <img src={projectIcon} className="pt-1 self-start" alt="project-icon" />
+                    <div className="flex flex-col gap-1">
+                    <span className="text-gray-700 font-[600] text-[16px]">Project Management</span>
+                    <p className="text-[14px] max-w-[22ch] font-medium text-gray-500 ">Manage and track projects of any type and size.</p>
+                    </div>
+                </div>
+                <div className="flex gap-2">
+                    <img src={remoteIcon}className="pt-1 self-start" alt="remote-icon" />
+                    <div className="flex flex-col gap-1">
+                    <span className="text-gray-700 font-[600] text-[16px]">Remote Work</span>
+                    <p  className="text-[14px]  max-w-[22ch] font-medium text-gray-500 ">Stay on the same page even if you&apos;re not in the room.</p>
+                    </div>
+                </div>
+                <div className="flex gap-2">
+                    <img src={crmIcon} className=" pt-1 self-start" alt="it-icon" />
+                    <div className="flex flex-col gap-1">
+                    <span className="text-gray-700 font-[600] text-[16px]">CRM</span>
+                    <p  className="text-[14px] max-w-[22ch] font-medium text-gray-500 ">All your clients and all their info in one place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="pt-8 pl-4 pr-2 pb-4">
+        <div className="text-[15px] font-extrabold text-darked">TYPE</div>
+            <div className="flex  flex-col gap-10 pt-10">
+                <div className="flex gap-2">
+                    <img src={enterpriseIcon} className="pt-1 self-start" alt="project-icon" />
+                    <div className="flex flex-col gap-1">
+                    <span className="text-gray-700 font-[600] text-[16px]">Enterprise</span>
+                    <p className="text-[14px] max-w-[22ch] font-medium text-gray-500 ">Align your organization toward company-wide goals.</p>
+                    </div>
+                </div>
+                <div className="flex gap-2">
+                    <img src={startupIcon} className="pt-1 self-start" alt="remote-icon" />
+                    <div className="flex flex-col gap-1">
+                    <span className="text-gray-700 font-[600] text-[16px]">Startup</span>
+                    <p  className="text-[14px]  max-w-[22ch] font-medium text-gray-500 ">Iterate quickly with a system that scales as you grow.</p>
+                    </div>
+                </div>
+                <div className="flex gap-2">
+                    <img src={nonProfitIcon} className=" pt-1 self-start" alt="it-icon" />
+                    <div className="flex flex-col gap-1">
+                    <span className="text-gray-700 font-[600] text-[16px]">Non-Profit</span>
+                    <p  className="text-[14px] max-w-[22ch] font-medium text-gray-500 ">Save time working, spend more-time saving the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
       <div className="px-8 py-6">
         <div className="flex gap-2" >

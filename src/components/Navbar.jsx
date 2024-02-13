@@ -83,11 +83,6 @@ const Navbar = () => {
                  </div>
                 )}
              <li onClick={handleLearnClick} className="text-[15px] flex  items-center gap-2 text-gray-700 font-bold"><span>Learn</span> <img src={dropDownIcon} alt="dropdown-icon" /> </li>
-             {showLearnDropdown && (
-                 <div className="absolute top-[100px] left-0 w-full bg-white">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur veritatis sunt fugit, voluptas hic. Consectetur quos eum omnis. Asperiores quo quas consequuntur ipsa, deserunt quae error necessitatibus repellendus fugiat quidem non impedit sunt expedita doloremque tempore illum quia cupiditate. Ipsam at repudiandae inventore voluptatum voluptate non, rem deserunt pariatur id corporis, hic enim laborum, atque amet quas. Rem tempore nihil dolore doloribus temporibus totam sed vitae. Incidunt odit nulla laboriosam. Adipisci quibusdam nesciunt, aspernatur nulla, quos voluptate recusandae provident consectetur aliquid natus incidunt quidem ipsa fugiat placeat labore ipsam, neque voluptatum! Expedita, eaque? Sequi distinctio fugiat dolor modi nemo!
-                 </div>
-                )}
              <li className="text-[15px] font-bold text-gray-700"> <a href="https://clickup.com/pricing"></a>Pricing</li>
              <li className="text-[15px] font-bold text-gray-700"><a href="https://clickup.com/plans/enterprise"></a> Enterprise</li>
             </ul>
