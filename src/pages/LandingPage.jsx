@@ -1,4 +1,3 @@
-import { Tab } from "@mui/material"
 import About from "../components/About"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
@@ -7,6 +6,7 @@ import AllTeams from "../components/AllTeams"
 import Award from "../components/Award"
 import TeamLookOut from "../components/TeamLookOut"
 import Footer from "../components/Footer"
+import Tab from "../components/Tab"
 
 const LandingPage = () => {
   return (
