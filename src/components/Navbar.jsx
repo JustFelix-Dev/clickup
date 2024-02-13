@@ -92,8 +92,8 @@ const Navbar = () => {
          <li className="text-[15px]  font-bold text-gray-700"><a href="https://clickup.com/plans/enterprise"></a> Contact Sales</li>
             </ul>
             <div className="flex items-center gap-4 ">
-            <button className="bg-[#7B68EE] font-bold text-[14px] py-[12px] px-[24px] text-white rounded-[9px] shadow-xl">Sign Up</button>
-            <button className="bg-[#E9EBF0] font-bold text-[14px] py-[12px] px-[24px] text-darked rounded-[9px] shadow-xl">Log in</button>
+            <button className="bg-[#7B68EE] hover:scale-95 hover:shadow-none transition-all font-bold text-[14px] py-[12px] px-[24px] text-white rounded-[9px] shadow-xl">Sign Up</button>
+            <button className="bg-[#E9EBF0] hover:scale-95 hover:shadow-none font-bold text-[14px] py-[12px] px-[24px] text-darked rounded-[9px] shadow-xl">Log in</button>
             </div>
          </div>
        </nav>
