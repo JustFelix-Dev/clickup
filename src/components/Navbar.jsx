@@ -10,6 +10,8 @@ const Navbar = () => {
     const [showLearnDropdown, setShowLearnDropdown] = useState(false);
     const [showSolutionDropdown, setShowSolutionDropdown] = useState(false);
     const navbarRef = useRef(null);
+    const productRef = useRef();
+    const solutionRef = useRef();
   
 
     useEffect(() => {
@@ -28,6 +30,8 @@ const Navbar = () => {
       }, []);
 
       const handleProductClick = () => {
+        productRef.current.classList.toggle('active-dropdown')
+        solutionRef.current.classList.remove('active-dropdown')
         setShowProductDropdown(!showProductDropdown);
         setShowLearnDropdown(false);
         setShowSolutionDropdown(false);
@@ -40,6 +44,8 @@ const Navbar = () => {
       };
     
       const handleSolutionClick = () => {
+        solutionRef.current.classList.toggle('active-dropdown')
+        productRef.current.classList.remove('active-dropdown')
         setShowProductDropdown(false);
         setShowLearnDropdown(false);
         setShowSolutionDropdown(!showSolutionDropdown);
@@ -71,17 +77,13 @@ const Navbar = () => {
             </a>
             <ul className="flex  items-center gap-8">
              <li onClick={handleProductClick} className=" text-[15px] flex items-center gap-2 text-gray-700 font-bold"><span>Product</span> <img src={dropDownIcon} alt="dropdown-icon" /> </li>
-             {showProductDropdown && (
-                 <div className="absolute top-[100px] left-0 w-full bg-white">
+                 <div ref={productRef} className="productRef absolute top-[100px] left-0 w-full bg-white">
                     <Product/>
                  </div>
-                )}
              <li onClick={handleSolutionClick} className="text-[15px] flex items-center gap-2 text-gray-700 font-bold "><span>Solutions</span> <img src={dropDownIcon} alt="dropdown-icon" /> </li>
-             {showSolutionDropdown && (
-                 <div className="absolute top-[100px] left-0 w-full bg-white">
+                 <div ref={solutionRef} className=" solutionRef absolute top-[100px] left-0 w-full bg-white">
                   <Solutions/>
                  </div>
-                )}
              <li onClick={handleLearnClick} className="text-[15px] flex  items-center gap-2 text-gray-700 font-bold"><span>Learn</span> <img src={dropDownIcon} alt="dropdown-icon" /> </li>
              <li className="text-[15px] font-bold text-gray-700"> <a href="https://clickup.com/pricing"></a>Pricing</li>
              <li className="text-[15px] font-bold text-gray-700"><a href="https://clickup.com/plans/enterprise"></a> Enterprise</li>

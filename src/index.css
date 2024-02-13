@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden;  
 }
 :root {
   font-family: 'Inter', sans-serif !important;
@@ -363,5 +363,35 @@ scale: 1.2;
 .slidetab-content {
   box-shadow: -40px -40px 100px  rgba(69, 163, 249, 0.10), 0 0 1px rgba(137, 32, 254, 0.15), 40px 40px 80px rgba(255, 11, 229, 0.10), 0 0 1px rgba(255, 200, 0, 0.10);
   min-height: 600px;
+}
+
+/* NAV DROPDOWNS */
+
+.productRef {
+   transform: translateY(-10px);
+   opacity: 0;
+  transition: all ease-in-out 400ms;
+  visibility: hidden;
+}
+.productRef.active-dropdown {
+  /* background-color: #888; */
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.solutionRef {
+  transform: translateY(-10px);
+  opacity: 0;
+ transition: all ease-in-out 400ms;
+ visibility: hidden;
+}
+.solutionRef.active-dropdown {
+ /* background-color: #888; */
+ transform: translateY(0);
+ opacity: 1;
+ visibility: visible;
+
 }
 
