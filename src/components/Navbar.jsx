@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import clickUpLogo from "../assets/clickup-logo.svg"
 import dropDownIcon from "../assets/dropdown-icon.svg"
 import Product from "../dropdowns/Product";
+import Solutions from "../dropdowns/Solutions";
 
 const Navbar = () => {
     const [ navbar,setNavbar] = useState(false);
@@ -77,7 +78,7 @@ const Navbar = () => {
              <li onClick={handleSolutionClick} className="text-[15px] flex items-center gap-2 text-gray-700 font-bold "><span>Solutions</span> <img src={dropDownIcon} alt="dropdown-icon" /> </li>
              {showSolutionDropdown && (
                  <div className="absolute top-[100px] left-0 w-full bg-white">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio consectetur veritatis sunt fugit, voluptas hic. Consectetur quos eum omnis. Asperiores quo quas consequuntur ipsa, deserunt quae error necessitatibus repellendus fugiat quidem non impedit sunt expedita doloremque tempore illum quia cupiditate. Ipsam at repudiandae inventore voluptatum voluptate non, rem deserunt pariatur id corporis, hic enim laborum, atque amet quas. Rem tempore nihil dolore doloribus temporibus totam sed vitae. Incidunt odit nulla laboriosam. Adipisci quibusdam nesciunt, aspernatur nulla, quos voluptate recusandae provident consectetur aliquid natus incidunt quidem ipsa fugiat placeat labore ipsam, neque voluptatum! Expedita, eaque? Sequi distinctio fugiat dolor modi nemo!
+                  <Solutions/>
                  </div>
                 )}
              <li onClick={handleLearnClick} className="text-[15px] flex  items-center gap-2 text-gray-700 font-bold"><span>Learn</span> <img src={dropDownIcon} alt="dropdown-icon" /> </li>
