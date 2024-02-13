@@ -7,12 +7,14 @@ import Award from "../components/Award"
 import TeamLookOut from "../components/TeamLookOut"
 import Footer from "../components/Footer"
 import Tab from "../components/Tab"
+import SliderTab from "../components/SliderTab"
 
 const LandingPage = () => {
   return (
      <>
       <Navbar/>
     <Hero/>
+    <SliderTab/>
     <About/>
     <Tab/>
     <FireWorks/>

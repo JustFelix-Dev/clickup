@@ -328,3 +328,14 @@ main ul a {
   transform: translateY(3px);
 }
 
+/*  */
+.slidetab-container .slidetabs .slidetab div {
+  background: #F8F8FC;
+  padding: .4rem;
+}
+.slidetab-container .slidetabs .slidetab img {
+  height: 40px;
+  width: 40px;
+ 
+}
+
