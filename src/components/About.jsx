@@ -16,9 +16,9 @@ const About = () => {
   return (
     <>
     <div className="flex flex-col justify-center items-center  text-center">
-      <div className="border w-full about-header">Save time and get more done</div>
+      <div className=" w-full about-header">Save time and get more done</div>
       <span className="text-[#24223E] flex  max-w-[32ch] text-[20px] font-medium text-center">Supercharge productivity. Streamline work by doing it, and seeing it, in one place.</span>
-      <div className="flex self-stretch relative text-left pl-12">
+      <div className="mt-28 flex self-stretch relative text-left pl-12">
         <div>
             <header className="improve-collab">Improve collaboration</header>
             <p className="text-[16px]  max-w-[50ch] font-medium text-custom-base text-left"><span className="font-[800] text-custom-base">Get your teams working together more closely, even if they&apos;re far apart.</span> Centralize project-related communications in one place, brainstorm ideas with Whiteboards, and draft plans together with collaborative Docs.</p>

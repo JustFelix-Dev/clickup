@@ -329,13 +329,39 @@ main ul a {
 }
 
 /*  */
+.slidetab-container .slidetabs .slidetab {
+  display: flex;
+  gap: .8rem;
+  flex-direction: column;
+  align-items: center;
+}
+.slidetab-container .slidetabs .slidetab  span {
+  transition: all ease-out 200ms;
+}
+.slidetab-container .slidetabs .slidetab.active div {
+background-color: #222;
+scale: 1.2;
+}
+.slidetab-container .slidetabs .slidetab.active  span {
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .slidetab-container .slidetabs .slidetab div {
   background: #F8F8FC;
-  padding: .4rem;
+  border-radius: 9px;
+  padding: .8rem;
+  transition: all ease-in 200ms;
 }
 .slidetab-container .slidetabs .slidetab img {
   height: 40px;
   width: 40px;
  
+}
+
+.slidetab-content {
+  box-shadow: -40px -40px 100px  rgba(69, 163, 249, 0.10), 0 0 1px rgba(137, 32, 254, 0.15), 40px 40px 80px rgba(255, 11, 229, 0.10), 0 0 1px rgba(255, 200, 0, 0.10);
+  min-height: 600px;
 }
 
