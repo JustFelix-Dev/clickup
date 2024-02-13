@@ -10,6 +10,7 @@ const Navbar = () => {
     const [showLearnDropdown, setShowLearnDropdown] = useState(false);
     const [showSolutionDropdown, setShowSolutionDropdown] = useState(false);
     const navbarRef = useRef(null);
+  
 
     useEffect(() => {
         const handleClickOutside = (event) => {

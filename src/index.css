@@ -22,6 +22,12 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+nav ul li:hover {
+  cursor: pointer;
+  transition: all ease-out 200ms;
+  color: #7B68EE;
+}
+
 .hero-text {
   background-image:linear-gradient(14deg, #45C4F9 0%, navy 50%, #d30cbf 100%);
   font-size: 70px;
