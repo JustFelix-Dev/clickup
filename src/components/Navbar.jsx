@@ -16,7 +16,8 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-          if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+          if (navbarRef.current && 
+            !navbarRef.current.contains(event.target)) {
             setShowProductDropdown(false);
             setShowLearnDropdown(false);
             setShowSolutionDropdown(false);
